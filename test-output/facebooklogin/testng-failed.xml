@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [facebooklogin]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.facebook.com/"/>
+    <classes>
+      <class name="test_Package.TestClassFacebookLogin">
+        <methods>
+          <include name="test"/>
+          <include name="openFacebookLoginPage"/>
+          <include name="aftertest"/>
+        </methods>
+      </class> <!-- test_Package.TestClassFacebookLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [facebooklogin] -->
