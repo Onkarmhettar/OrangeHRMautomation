@@ -12,6 +12,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StaticBrowser {
 	static WebDriver driver;
+	String browser;
 	
 	public static WebDriver launchBrowsers(String browser,String URL,int timeout)
 	{

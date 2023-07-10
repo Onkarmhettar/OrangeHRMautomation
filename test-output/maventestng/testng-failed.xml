@@ -6,13 +6,15 @@
     <classes>
       <class name="test_Package.Test_Class1">
         <methods>
-          <include name="aftertest"/>
           <include name="beforeMethod"/>
+          <include name="BeforeTest"/>
           <include name="beforeClass"/>
-          <include name="beforetest"/>
+          <include name="aftertest"/>
           <include name="afterClass"/>
           <include name="verifyDashboardElement"/>
+          <include name="abcd"/>
           <include name="afterMethod"/>
+          <include name="AfterMethod"/>
         </methods>
       </class> <!-- test_Package.Test_Class1 -->
     </classes>

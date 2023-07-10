@@ -4,11 +4,8 @@
   <test thread-count="5" name="chrome">
   <parameter name="browser" value="chrome"></parameter>
   
-    <classes>
-      
+    <classes>  
       <class name="test_Package.Test_Class1">
-      
-      
       </class>
     </classes>
   </test> <!-- Test -->

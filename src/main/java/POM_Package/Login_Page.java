@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Login_Page {
+public class Login_Page{
 
 	
 // WebElements
-	@FindBy(xpath="//input[@name='username']")
+	@FindBy(xpath="//input[@placeholder='Username']")
 	private WebElement username;
 	
 	@FindBy(xpath="//input[@name='password']")

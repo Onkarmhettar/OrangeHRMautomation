@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,11 +21,12 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-maventestng" class="navigator-link">
-              <span class="suite-name border-passed">maventestng</span>
+              <span class="suite-name border-failed">maventestng</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +93,35 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  1 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-maventestng" class="hide-methods failed suite-maventestng"> (hide)</a> <!-- hide-methods failed suite-maventestng -->
+                      <a href="#" panel-name="suite-maventestng" class="show-methods failed suite-maventestng"> (show)</a> <!-- show-methods failed suite-maventestng -->
+                    </span>
+                    <div class="method-list-content failed suite-maventestng">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-maventestng" title="test_Package.Test_Class1" class="method navigator-link" hash-for-method="verifyDashboardElement">verifyDashboardElement</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-maventestng -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-maventestng" class="hide-methods skipped suite-maventestng"> (hide)</a> <!-- hide-methods skipped suite-maventestng -->
+                      <a href="#" panel-name="suite-maventestng" class="show-methods skipped suite-maventestng"> (show)</a> <!-- show-methods skipped suite-maventestng -->
+                    </span>
+                    <div class="method-list-content skipped suite-maventestng">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-maventestng" title="test_Package.Test_Class1" class="method navigator-link" hash-for-method="abcd">abcd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-maventestng -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +130,6 @@
                       <a href="#" panel-name="suite-maventestng" class="show-methods passed suite-maventestng"> (show)</a> <!-- show-methods passed suite-maventestng -->
                     </span>
                     <div class="method-list-content passed suite-maventestng">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-maventestng" title="test_Package.Test_Class1" class="method navigator-link" hash-for-method="abcd">abcd</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-maventestng" title="test_Package.Test_Class1" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
@@ -121,11 +145,6 @@
                         <a href="#" panel-name="suite-maventestng" title="test_Package.Test_Class1" class="method navigator-link" hash-for-method="test3">test3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-maventestng" title="test_Package.Test_Class1" class="method navigator-link" hash-for-method="verifyDashboardElement">verifyDashboardElement</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-maventestng -->
                   </li>
                 </ul>
@@ -138,9 +157,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-maventestng" class="panel maventestng">
-          <div class="suite-maventestng-class-passed">
+          <div class="suite-maventestng-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">test_Package.Test_Class1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDashboardElement">
+                  </a> <!-- verifyDashboardElement -->
+                  <span class="method-name">verifyDashboardElement</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index&gt; but was:&lt;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&gt;
+	at test_Package.Test_Class1.verifyDashboardElement(Test_Class1.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-maventestng-class-failed -->
+          <div class="suite-maventestng-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">test_Package.Test_Class1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,8 +188,23 @@
                   <a name="abcd">
                   </a> <!-- abcd -->
                   <span class="method-name">abcd</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.base/java.io.File.&lt;init&gt;(File.java:278)
+	at testUtility.Screenshot.ScreenShotCaptureMethod(Screenshot.java:18)
+	at test_Package.BaseClass.AfterMethod(BaseClass.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-maventestng-class-skipped -->
+          <div class="suite-maventestng-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test_Package.Test_Class1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="test1">
@@ -170,13 +224,6 @@
                   <a name="test3">
                   </a> <!-- test3 -->
                   <span class="method-name">test3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyDashboardElement">
-                  </a> <!-- verifyDashboardElement -->
-                  <span class="method-name">verifyDashboardElement</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -238,28 +285,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyDashboardElement')
 data.setCell(0, 2, 'test_Package.Test_Class1')
-data.setCell(0, 3, 2894);
+data.setCell(0, 3, 4773);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test1')
 data.setCell(1, 2, 'test_Package.Test_Class1')
-data.setCell(1, 3, 25);
+data.setCell(1, 3, 75);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test3')
 data.setCell(2, 2, 'test_Package.Test_Class1')
-data.setCell(2, 3, 10);
+data.setCell(2, 3, 15);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test2')
 data.setCell(3, 2, 'test_Package.Test_Class1')
-data.setCell(3, 3, 5);
+data.setCell(3, 3, 3);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'abcd')
 data.setCell(4, 2, 'test_Package.Test_Class1')
-data.setCell(4, 3, 5);
+data.setCell(4, 3, 0);
 window.suiteTableData['maventestng']= { tableData: data, tableDiv: 'times-div-maventestng'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-maventestng">
               </div> <!-- times-div-maventestng -->
             </div> <!-- times-div -->
@@ -287,80 +334,104 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test_Package.Test_Class1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforetest(chrome)</span>
+                <span class="method-name">BeforeTest(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">15623 ms</span>
+                <span class="method-start">59321 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">15652 ms</span>
+                <span class="method-start">59359 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">15655 ms</span>
+                <span class="method-start">59364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">15692 ms</span>
+                <span class="method-start">59452 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=test1 status=SUCCESS method=Test_Class1.test1()[pri:0, instance:test_Package.Test_C...)</span>
+                <span class="method-start">59453 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">15704 ms</span>
+                <span class="method-start">60325 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test2</span>
-                <span class="method-start">15705 ms</span>
+                <span class="method-start">60325 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">15725 ms</span>
+                <span class="method-start">60342 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=test2 status=SUCCESS method=Test_Class1.test2()[pri:0, instance:test_Package.Test_C...)</span>
+                <span class="method-start">60343 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">15734 ms</span>
+                <span class="method-start">60551 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test3</span>
-                <span class="method-start">15742 ms</span>
+                <span class="method-start">60551 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <span class="method-name">AfterMethod([TestResult name=test3 status=SUCCESS method=Test_Class1.test3()[pri:0, instance:test_Package.Test_C...)</span>
+                <span class="method-start">60598 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">15760 ms</span>
+                <span class="method-start">60598 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">15762 ms</span>
+                <span class="method-start">61024 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyDashboardElement</span>
-                <span class="method-start">15763 ms</span>
+                <span class="method-start">61026 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">18661 ms</span>
+                <span class="method-start">65807 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AfterMethod([TestResult name=verifyDashboardElement status=FAILURE method=Test_Class1.verifyDashboardElement()[p...)</span>
+                <span class="method-start">65809 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">18673 ms</span>
+                <span class="method-start">66031 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">abcd</span>
-                <span class="method-start">18676 ms</span>
+                <span class="method-start">66035 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">18692 ms</span>
+                <span class="method-start">66050 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterMethod</span>
+                <span class="method-start">66072 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">18694 ms</span>
+                <span class="method-start">66076 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">aftertest</span>
-                <span class="method-start">18696 ms</span>
+                <span class="method-start">66081 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

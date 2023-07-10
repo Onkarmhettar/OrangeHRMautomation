@@ -9,14 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">maventestng</th></tr>
-<tr><td><a href="#t0">chrome</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">18,722</td><td></td><td></td></tr>
+<tr><td><a href="#t0">chrome</a></td><td class="num">3</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">66,096</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">maventestng</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">test_Package.Test_Class1</td><td><a href="#m0">abcd</a></td><td rowspan="1">1679651372917</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m1">test1</a></td><td rowspan="1">1679651369896</td><td rowspan="1">25</td></tr><tr class="passedeven"><td><a href="#m2">test2</a></td><td rowspan="1">1679651369946</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m3">test3</a></td><td rowspan="1">1679651369983</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m4">verifyDashboardElement</a></td><td rowspan="1">1679651370004</td><td rowspan="1">2894</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">maventestng</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">test_Package.Test_Class1</td><td><a href="#m0">AfterMethod</a></td><td rowspan="1">1688816200471</td><td rowspan="1">211</td></tr><tr><th colspan="4">chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test_Package.Test_Class1</td><td><a href="#m1">verifyDashboardElement</a></td><td rowspan="1">1688816195688</td><td rowspan="1">4773</td></tr><tr><th colspan="4">chrome &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">test_Package.Test_Class1</td><td><a href="#m2">AfterMethod</a></td><td rowspan="1">1688816200734</td><td rowspan="1">-1688816200734</td></tr><tr class="skippedeven"><td><a href="#m3">afterClass</a></td><td rowspan="1">1688816200738</td><td rowspan="1">-1688816200738</td></tr><tr class="skippedeven"><td><a href="#m4">afterMethod</a></td><td rowspan="1">1688816200712</td><td rowspan="1">-1688816200712</td></tr><tr class="skippedeven"><td><a href="#m5">aftertest</a></td><td rowspan="1">1688816200743</td><td rowspan="1">-1688816200743</td></tr><tr class="skippedeven"><td><a href="#m6">beforeMethod</a></td><td rowspan="1">1688816200693</td><td rowspan="1">-1688816200693</td></tr><tr><th colspan="4">chrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">test_Package.Test_Class1</td><td><a href="#m7">abcd</a></td><td rowspan="1">1688816200697</td><td rowspan="1">0</td></tr><tr><th colspan="4">chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">test_Package.Test_Class1</td><td><a href="#m8">test1</a></td><td rowspan="1">1688816194026</td><td rowspan="1">75</td></tr><tr class="passedeven"><td><a href="#m9">test2</a></td><td rowspan="1">1688816194987</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m10">test3</a></td><td rowspan="1">1688816195213</td><td rowspan="1">15</td></tr></tbody>
 </table>
-<h2>chrome</h2><h3 id="m0">test_Package.Test_Class1#abcd</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test_Package.Test_Class1#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test_Package.Test_Class1#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test_Package.Test_Class1#test3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">test_Package.Test_Class1#verifyDashboardElement</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chrome</h2><h3 id="m0">test_Package.Test_Class1#AfterMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=verifyDashboardElement status=FAILURE method=Test_Class1.verifyDashboardElement()[pri:0, instance:test_Package.Test_Class1@33d512c1] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at java.base/java.io.File.&lt;init&gt;(File.java:278)
+	at testUtility.Screenshot.ScreenShotCaptureMethod(Screenshot.java:18)
+	at test_Package.BaseClass.AfterMethod(BaseClass.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test_Package.Test_Class1#verifyDashboardElement</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index&gt; but was:&lt;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&gt;
+	at test_Package.Test_Class1.verifyDashboardElement(Test_Class1.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test_Package.Test_Class1#AfterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test_Package.Test_Class1#afterClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test_Package.Test_Class1#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test_Package.Test_Class1#aftertest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test_Package.Test_Class1#beforeMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test_Package.Test_Class1#abcd</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at java.base/java.io.File.&lt;init&gt;(File.java:278)
+	at testUtility.Screenshot.ScreenShotCaptureMethod(Screenshot.java:18)
+	at test_Package.BaseClass.AfterMethod(BaseClass.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">test_Package.Test_Class1#test1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">test_Package.Test_Class1#test2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">test_Package.Test_Class1#test3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -6,11 +6,12 @@
   
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-	<dependency>
+<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.8.0</version>
-	</dependency>
+    <version>4.9.0</version>
+</dependency>
+
 
 	<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 	<dependency>
@@ -43,15 +44,30 @@
 	</dependency>
 
 	<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
+	<dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.1.1</version>
-</dependency>
+	</dependency>
 
-  
-  
-  
+  <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>4.0.0</version>
+	</dependency>
+
+  <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-devtools-v113</artifactId>
+            <version>4.9.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.6.1</version>
+        </dependency>
   
   
   </dependencies>
